@@ -6,12 +6,9 @@
     background-color: rgba(36, 37, 41);
     border-radius: 15px;
     cursor: pointer;
+    margin: 15px;
     position: relative;
-}
 
-.game-item:not(:last-child){
-    margin-bottom: 30px;
-    margin-right: 50px;
 }
 
 .game_item_title{
