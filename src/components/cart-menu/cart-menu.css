@@ -1,9 +1,9 @@
 .cart-menu{
     position: absolute;
-    left: 10px;
+    left: -180px;
     top: 30px;
     background-color: rgba(36, 37, 41);
-    width: 400px;
+    width: 250px;
     padding: 10px 20px;
     z-index: 2;
     border-radius: 15px;
