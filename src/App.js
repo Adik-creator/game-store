@@ -4,7 +4,7 @@ import {
     Route,
 } from "react-router-dom";
 
-import HomePage from "./pages/home-page/home-page";
+import Data from "./pages/home-page/data";
 import Layout from "./components/layout/layout";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
         <div className="App">
             <Routes>
                 <Route path="/" element={<Layout/>}>
-                    <Route index element={<HomePage/>}/>
+                    <Route index element={<Data/>}/>
                 </Route>
 
             </Routes>
