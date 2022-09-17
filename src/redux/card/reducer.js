@@ -16,7 +16,5 @@ const cardSlice = createSlice({
 })
 
 
-
-
 export const {setItemInCard, deleteItemFromCard} = cardSlice.actions
 export default cardSlice.reducer

@@ -2,16 +2,19 @@ import React from 'react';
 import {Outlet} from "react-router-dom";
 
 import Header from "../header/header";
+import './layout.css'
 
 const Layout = () => {
     return (
-        <div>
+        <div className="main-wrapper">
             <Header/>
 
-            <Outlet/>
+            <main className="container">
+                <Outlet/>
+            </main>
 
-            <footer>
-                2022 y
+            <footer className="footer">
+                New games.
             </footer>
         </div>
     );

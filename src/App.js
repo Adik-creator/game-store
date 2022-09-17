@@ -6,6 +6,8 @@ import {
 
 import Data from "./pages/home-page/data";
 import Layout from "./components/layout/layout";
+import {GamePage} from "./pages/GamePage";
+import {OrderPage} from "./pages/OrderPage";
 
 function App() {
 
@@ -16,6 +18,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<Layout/>}>
                     <Route index element={<Data/>}/>
+                    <Route path={'/app/:title'} element={<GamePage/>}/>
+                    <Route path={'/order'} element={<OrderPage/>}/>
                 </Route>
 
             </Routes>
