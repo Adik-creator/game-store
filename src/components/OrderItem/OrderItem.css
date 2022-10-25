@@ -1,22 +1,43 @@
 
 
 .order-item {
+    width: 100%;
     display: flex;
-    margin-bottom: 30px;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .order-item-cover {
-    width: 200px;
+    width: 100%;
+    max-width: 300px;
     margin-right: 30px;
+    margin-bottom: 15px;
 }
 
-.order-item-title {
+.order-page-title{
     font-size: 24px;
     font-weight: bold;
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+
 }
 
 .order-item-price {
     font-size: 24px;
     font-weight: bold;
-    margin-left: auto;
+    display: flex;
+    gap: 1rem;
+    margin-left: 15px;
+}
+
+.order-item-price span{
+    margin-left: 10px;
+}
+
+@media (max-width: 940px){
+    .order-item {
+        flex-wrap: wrap;
+    }
 }
