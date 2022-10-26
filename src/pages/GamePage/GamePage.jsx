@@ -18,23 +18,27 @@ const GamePage = () => {
             <div className="game-page-content">
                 <div className="game-page-left">
                     <iframe
-                        width="90%"
-                        height="400px"
                         src={game.video}
                         title="Youtube video player"
                         frameBorder="0"
+                        className="game-page-iframe"
                     >
                     </iframe>
                 </div>
                 <div className="game-page-right">
-                    <GameCover image={game.image}/>
-                    <p>{game.description}</p>
-                    <p className="secondary-text">Популиарные метки этого продукта:</p>
-                    {game.genres.map(genre => <GameGenre genre={genre} key={genre}/>)}
-                    <div className="game-page-buy-game">
+                    <div className="game-page-img">
+                        <GameCover image={game.image} className="game-page-for-flex"/>
+                    </div>
+                    <div className="game-page-for-flex game-page-text">
+                        <p>{game.description}</p>
+                        <p className="secondary-text">Популиарные метки этого продукта:</p>
+                        {game.genres.map(genre => <GameGenre genre={genre} key={genre}/>)}
+                    </div>
+                    <div className="game-page-buy-game game-page-for-flex">
                         <GameBuy game={game}/>
                     </div>
                 </div>
+
             </div>
         </div>
     );
